@@ -1,0 +1,34 @@
+@import "./wrapper.css";
+@import "./header.css";
+@import "./principal.css";
+@import "./products.css";
+@import "./button.css";
+@import "./footer.css";
+
+
+:root {
+    --fuenteBase: 'Poppins', sans-serif;
+    --headline1: bold 95px/153.71px var(--fuenteBase);
+    --headline2: bold 59px/95px var(--fuenteBase);
+    --headline3: bold 48px/77px var(--fuenteBase);
+    --headline4: bold 34px/55px var(--fuenteBase);
+    --headline5: bold 24px/38px var(--fuenteBase);
+    --body1:  16px/25px var(--fuenteBase);
+    --body2:  14px/22px var(--fuenteBase);
+    --button: bold 14px/22px var(--fuenteBase);
+    --caption: 12px/19px var(--fuenteBase);
+
+    --purpura: #310A90;
+    --verde: #42E2B8;
+    --blanco: white;
+    --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #A239CA 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #0E0B16 0%, #5151E5 100%);
+}
+
+
+body {
+    background-color: black;
+    min-block-size: 100vh;
+    font: var(--body1);
+    color: var(--blanco);
+    margin: 0;
+}

@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+/* .header img {
+    object-fit: cover;
+} */
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: var(--blanco);
+    font: var(--button);
+    text-transform: uppercase;
+}
+
+.menu ul a.is-active {
+    color: var(--purpura);
+}
+
+@media screen and (min-width: 768px){
+    .menu {
+        display: block;
+    }
+}

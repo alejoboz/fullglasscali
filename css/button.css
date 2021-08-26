@@ -1,0 +1,22 @@
+.button {
+    background: var(--purpura);
+    color: var(--blanco);
+    font: var(--button);
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 13px;
+    padding-block-end: 13px; 
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.button.is-secondary {
+    background: unset;
+    color: var(--blanco);
+    border: 2px solid var(--blanco);
+    filter: drop-shadow(2px 4px 6px black);
+}
