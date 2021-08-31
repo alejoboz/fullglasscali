@@ -14,8 +14,9 @@
     height: 329px;
     margin: 40px auto;
     border-radius: 24px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(39.7657px); 
+    border-image-source: radial-gradient(83.14% 78.52% at -12.32% -18.69%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 100%);
+                background: var(--gradient);
+        backdrop-filter: blur(40px);
     max-inline-size: 100%;
     block-size: auto;
 }
@@ -33,6 +34,12 @@
     padding: 0 24px 24px 24px;
     font: var(--caption);
     opacity: 0.5;
+}
+
+@media screen and (min-width: 550px){
+    .comentario {
+        width: 500px;
+    }
 }
 
 @media screen and (min-width: 768px){

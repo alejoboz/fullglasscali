@@ -27,11 +27,12 @@
     width: 100%;
     justify-content: center;
     margin-bottom: 50px;
+    align-items: center;
 }
 
 .effect {
     width: 18ch;
-    font: var(--headline2);
+    font: var(--headline3);
     animation: typing 2s steps(18), blink 0.3s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -41,7 +42,7 @@
 
 .effect-2 {
     width: 23ch;
-    font: var(--headline2);
+    font: var(--headline3);
     animation: typing 2s steps(23), blink 0.3s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -63,4 +64,49 @@
 
 .main-text img{
     width: 100px;
+}
+
+@media screen and (max-width: 900px) {
+    .products-container {
+        grid-template-columns: repeat(2, minmax(100px, 293px));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .effect {
+        font: var(--headline4);
+    }
+    .effect-2 {
+        font: var(--headline4);
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .effect {
+        font: var(--headline5);
+    }
+    .effect-2 {
+        font: var(--headline5);
+    }
+    .products-container {
+        grid-template-columns: repeat(1, minmax(100px, 293px));
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .main-text {
+        display: block;
+    }
+
+    .main-text img {
+        display: flex;
+        margin: auto;
+    }
+    .effect {
+        width: 26ch;
+    }
+    .effect-2 {
+        width: 26ch;
+    }
 }

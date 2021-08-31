@@ -20,6 +20,7 @@
     display: flex;
     list-style: none;
     gap: 40px;
+    padding: 0 30px;
 }
 
 .menu ul a {
@@ -33,7 +34,7 @@
     color: var(--purpura);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 599px){
     .menu {
         display: block;
     }
