@@ -34,6 +34,7 @@
     color: var(--purpura);
 }
 
+
 @media screen and (min-width: 599px){
     .menu {
         display: block;

@@ -10,6 +10,19 @@
     font-size: 2rem;
 }
 
+.burguer-social {
+    display: none;
+    padding-bottom: 24px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.burguer-social a img {
+    display: none;
+    width: 35px;
+}
+
 @media screen and (max-width: 600px) {
     .menu {
         height: 100vh;
@@ -39,5 +52,10 @@
     
     .open-menu {
         display: block;
+    }
+
+    .burguer-social a img {
+        display: flex;
+        width: 35px;
     }
 }
