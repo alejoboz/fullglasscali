@@ -1,0 +1,43 @@
+.open-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.close-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--gradient);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .open-menu {
+        display: block;
+    }
+}

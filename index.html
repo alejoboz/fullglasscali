@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>FullGlass Cali</title>
 </head>
 
@@ -15,7 +16,8 @@
     <div class="wrapper">
 
         <header class="header">
-            <img src="./assets/gafas-de-sol (blancas).svg" alt="Logo de FullGlass" width="150" height="80">
+            <div class="open-menu"><i class="fas fa-bars"></i></div>
+            <a href="#comentario"><img src="./assets/gafas-de-sol (blancas).svg" alt="Logo de FullGlass" width="150" height="80"></a>
             <nav class="menu">
                 <ul>
                     <li>
@@ -27,12 +29,13 @@
                     <li>
                         <a href="#medicadas">Medicadas</a>
                     </li>
+                    <div class="close-menu"><i class="far fa-times-circle"></i></div>
                 </ul>
             </nav>
             <button class="button">Contáctanos</button>
         </header>
 
-        <section class="comentario">
+        <section class="comentario" id="comentario">
             <div class="img-comentario">
                 <img src="./assets/sol-con-gafassvg.svg" alt="">
             </div>
@@ -993,6 +996,7 @@
                 </div>
             </div>
         </footer>
+        <script src="index.js"></script>
     </div>
 </body>
 
